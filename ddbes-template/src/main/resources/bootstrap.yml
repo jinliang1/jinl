@@ -1,0 +1,41 @@
+server:
+  port: 9003
+
+ddbes:
+  inject-userInfo: true
+  swagger:
+    enabled: true
+    docket:
+      report接口文档:
+        title: DDBES template 测试
+        base-package: com.ddbes.template.controller
+        description: 开发中
+        version: 1.0.0.RELEASE
+    ignored-parameter-clazz: com.ddbes.common.entity.CommonUserInfo
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos.inddbes.com:80
+        namespace: 373617a3-2606-4c20-8491-fa7b10410bc0
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: template-service
+  profiles:
+    active: dev
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  # 数据库相关配置
+  db-config:
+    #主键类型  AUTO:"数据库ID自增", INPUT:"用户输入ID",ID_WORKER:"全局唯一ID (数字类型唯一ID)", UUID:"全局唯一ID UUID";
+    id-type: input
+    #字段策略 IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断"),NOT_EMPTY:"非空判断"
+    #      field-strategy: not_empty
+    #驼峰下划线转换
+    column-underline: true
+    #数据库大写下划线转换
+    capital-mode: true
