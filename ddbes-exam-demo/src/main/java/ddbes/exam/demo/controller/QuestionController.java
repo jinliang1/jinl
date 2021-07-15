@@ -25,34 +25,39 @@ import java.util.List;
 public class QuestionController {
     @Autowired
     private QuestionService questionService;
+
     @ApiOperation("查找单个考题")
     @GetMapping("/getQuestion/{qId}")
-    public Result getQuestion(@PathVariable("qId") int qId){
-        Question byId = questionService.getById(qId);
-        return Result.success(byId);
+    public Result getQuestion(@PathVariable("qId") String qId) {
+        Question questionByqId = questionService.getQuestionByqId(qId);
+        return Result.success(questionByqId);
     }
+
     @ApiOperation("查找全部")
-    @GetMapping("/listQuestion")
-    public Result listQuestion(){
-        List<Question> list = questionService.list();
-        return Result.success(list);
+    @GetMapping("/listQuestion/{paId}")
+    public Result listQuestion(@PathVariable String paId) {
+        List<Question> questionByPaId = questionService.getQuestionByPaId(paId);
+        return Result.success(questionByPaId);
     }
+
     @ApiOperation("添加考题")
     @PostMapping("/save")
-    public Result save(@RequestBody Question question){
-        questionService.save(question);
+    public Result save(@RequestBody Question question) {
+        questionService.saveQuestion(question);
         return Result.success();
     }
+
     @ApiOperation("修改考题")
     @PutMapping("/updateQuestion")
-    public Result updateQuestion(@RequestBody Question question){
-        questionService.updateById(question);
+    public Result updateQuestion(@RequestBody Question question) {
+        questionService.updateQuestion(question);
         return Result.success();
     }
+
     @ApiOperation("删除考题")
     @DeleteMapping("/deleteQuestion/{qId}")
-    public Result deleteQuestion(@PathVariable("qId") int qId){
-        questionService.removeById(qId);
+    public Result deleteQuestion(@PathVariable("qId") String qId) {
+        questionService.deleteQuestionByqId(qId);
         return Result.success();
     }
 }

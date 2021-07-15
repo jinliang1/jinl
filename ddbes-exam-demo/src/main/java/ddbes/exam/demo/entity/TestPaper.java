@@ -22,27 +22,19 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class TestPaper  implements Serializable {
+public class TestPaper implements Serializable {
     private static final long serialVersionUID = 1859620114985735126L;
     @ApiModelProperty(value = "试卷的id")
     @TableId
-    private int paId;
-    @ApiModelProperty(value = "试卷的名称")
-    private int paName;
-    @ApiModelProperty(value = "用户id")
-    private  String uId;
-    @ApiModelProperty(value = "题库的id")
-    private  int qId;
+    private String paId;
+    @ApiModelProperty("试卷的名称")
+    private String paName;
     @ApiModelProperty("科目")
     private String course;
+    @ApiModelProperty("时间")
+    private Long time;
     @ApiModelProperty("总成绩")
-    private float score;
-    @ApiModelProperty("用户标记表")
-    private UserFlag userFlag;
-    @ApiModelProperty("试卷全部题")
-    private List<Topic> topics;
-
-
+    private String score;
 
 
 }

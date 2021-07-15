@@ -26,26 +26,17 @@ public class Question implements Serializable {
     private static final long serialVersionUID = 1471834500129355875L;
     @ApiModelProperty("题目的id")
     @TableId
-    private int qId;
-    @ApiModelProperty("题目的类型：1单选2多选")
-    private int qType;
-    @ApiModelProperty("科目")
-    private String courseId;
+    private String qId;
+    @ApiModelProperty("题目的类型：1单选2多选3判断4简答题")
+    private String qType;
     @ApiModelProperty("题目")
     private String ques;
-    @ApiModelProperty("选项A")
-    private String keyA;
-    @ApiModelProperty("选项B")
-    private String keyB;
-    @ApiModelProperty("选项C")
-    private String keyC;
-    @ApiModelProperty("选项D")
-    private String keyD;
-    @ApiModelProperty("答案")
-    private String answer;
-
-
-
+    @ApiModelProperty("选项")
+    private String qOption;
+    @ApiModelProperty("试卷id")
+    private String paId;
+    @ApiModelProperty("答题值")
+    private String qValue;
 
 
 }

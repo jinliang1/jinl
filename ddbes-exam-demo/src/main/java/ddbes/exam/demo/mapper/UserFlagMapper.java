@@ -16,8 +16,8 @@ import org.apache.ibatis.annotations.Param;
  * Copyright: Copyright (c) 2021
  */
 @Mapper
-public interface UserFlagMapper  extends BaseMapper<UserFlag> {
+public interface UserFlagMapper extends BaseMapper<UserFlag> {
     @Insert("insert into user_flag (u_id,course,flag) values (#{uId},#{course},#{flag})")
-    int save(@Param("uId") String uId,@Param("course") String course,@Param("flag") int flag);
+    int save(@Param("uId") String uId, @Param("course") String course, @Param("flag") int flag);
 
 }

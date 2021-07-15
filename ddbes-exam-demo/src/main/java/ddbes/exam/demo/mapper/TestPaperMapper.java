@@ -3,6 +3,7 @@ package ddbes.exam.demo.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import ddbes.exam.demo.entity.TestPaper;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * @ProjectName: ddbes-exam-demo
@@ -15,5 +16,4 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface TestPaperMapper extends BaseMapper<TestPaper> {
-
 }

@@ -32,19 +32,20 @@ import java.util.List;
 @RequestMapping("/routine")
 @Slf4j
 public class RoutineController {
-     @Autowired
+    @Autowired
     private TestService testService;
     @Autowired
     private TestPaperService testPaperService;
     @Autowired
     private UserFlagService userFlagService;
-  /*  @Autowired
+
+    /* @Autowired
     private UserInfoService userInfoService;*/
     @ApiOperation("关于id的事务处理")
     @Transactional
     @PostMapping("/save/")
-    private Result save(@RequestBody TestPaper Paper){
-             testPaperService.save(Paper);
+    private Result save(@RequestBody TestPaper paper) {
+        testPaperService.saveTestPaper(paper);
         return Result.success();
     }
 

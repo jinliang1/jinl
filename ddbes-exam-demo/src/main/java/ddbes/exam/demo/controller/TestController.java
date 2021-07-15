@@ -29,23 +29,24 @@ public class TestController {
 
     @ApiOperation("查看单个试卷考试情况")
     @GetMapping("/getTest/{uId}")
-    public Result getTest(@PathVariable("uId") String uId){
+    public Result getTest(@PathVariable("uId") String uId) {
         Test byId = testService.getById(uId);
         return Result.success(byId);
     }
+
     @ApiOperation("添加试卷得分情况")
     @PostMapping("/save")
-    public  Result save(@RequestBody Test test){
+    public Result save(@RequestBody Test test) {
         testService.save(test);
-        return  Result.success();
+        return Result.success();
     }
+
     @ApiOperation("查询全部")
     @GetMapping("/listAll")
-    public Result listAll(){
+    public Result listAll() {
         List<Test> testList = testService.list();
         return Result.success(testList);
     }
-
 
 
 }

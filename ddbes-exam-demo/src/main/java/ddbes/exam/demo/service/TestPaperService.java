@@ -1,6 +1,8 @@
 package ddbes.exam.demo.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import ddbes.exam.demo.entity.Question;
+import ddbes.exam.demo.entity.Test;
 import ddbes.exam.demo.entity.TestPaper;
 
 /**
@@ -12,5 +14,9 @@ import ddbes.exam.demo.entity.TestPaper;
  * @Version: 1.0
  * Copyright: Copyright (c) 2021
  */
-public interface TestPaperService extends IService<TestPaper> {
+public interface TestPaperService  {
+    TestPaper getTestPaperByPaId(String paId);
+    boolean saveTestPaper(TestPaper testPaper);
+
+
 }

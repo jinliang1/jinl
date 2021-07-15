@@ -30,9 +30,10 @@ public class Test implements Serializable {
     private String course;
     @ApiModelProperty(value = "试卷的id")
     private int paId;
+    @ApiModelProperty(value = "试卷的名")
+    private int paName;
     @ApiModelProperty("总分")
-    private Float score;
-
+    private Integer score;
 
 
 }

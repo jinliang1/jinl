@@ -28,6 +28,6 @@ public class TestSet implements Serializable {
     @TableId
     private String course;
     @ApiModelProperty("考试时间")
-    private Date totalTime;
+    private Long totalTime;
 
 }

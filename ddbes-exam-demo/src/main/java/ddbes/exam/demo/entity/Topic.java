@@ -2,6 +2,9 @@ package ddbes.exam.demo.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
 import java.io.Serializable;
@@ -15,19 +18,22 @@ import java.io.Serializable;
  * @Version: 1.0
  * Copyright: Copyright (c) 2021
  */
-
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class Topic implements Serializable {
     private static final long serialVersionUID = -4688439014761611631L;
-
-    @ApiModelProperty("题目的编号")
+    @ApiModelProperty("在试卷中的编号")
     @TableId
-    private  Integer tId;
+    private String tId;
+    @ApiModelProperty("在题库中题目的编号")
+    private String qId;
     @ApiModelProperty("题目的类型")
-    private Integer tType;
-    @ApiModelProperty("题目的分值")
-    private Integer tValue;
-    @ApiModelProperty("题目的答案")
-    private Integer tAnswer;
+    private String tType;
+    @ApiModelProperty("试卷的id")
+    private String paId;
+    @ApiModelProperty("用户的答案")
+    private String tValue;
 
 
 }

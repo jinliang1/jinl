@@ -1,13 +1,17 @@
 package ddbes.exam.demo.controller;
 
 import com.ddbes.common.vo.Result;
+import ddbes.exam.demo.entity.Record;
 import ddbes.exam.demo.entity.Topic;
+import ddbes.exam.demo.service.RecordService;
 import ddbes.exam.demo.service.TopicService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import net.sf.jsqlparser.statement.select.Top;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -25,20 +29,27 @@ import java.util.List;
 public class TopicController {
     @Autowired
     private TopicService topicService;
+    @Autowired
+    private RecordService recordService;
 
     @ApiOperation("查询全部")
     @GetMapping("listTopic")
-    public Result listTopic(){
+    public Result listTopic() {
         List<Topic> list = topicService.list();
         return Result.success(list);
     }
+
     @ApiOperation("添加")
-    @PostMapping("saveList")
-    public Result saveList(@RequestBody List<Topic> listTopic){
-       topicService.saveBatch(listTopic);
+    @PostMapping("/save")
+    public Result saveList(@RequestBody Topic topic) {
+        List<Record> list = recordService.list();
+       /* Iterator<Record> it = list.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.hasNext());
+        }*/
+        topicService.save(topic);
         return Result.success();
     }
-
 
 
 }

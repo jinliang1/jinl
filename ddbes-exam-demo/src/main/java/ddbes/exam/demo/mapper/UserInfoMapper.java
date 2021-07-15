@@ -15,7 +15,6 @@ import org.springframework.stereotype.Repository;
  * Copyright: Copyright (c) 2021
  */
 @Mapper
-@Repository
 public interface UserInfoMapper extends BaseMapper<UserInfo> {
 
 }

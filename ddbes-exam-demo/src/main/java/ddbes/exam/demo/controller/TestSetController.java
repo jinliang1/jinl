@@ -23,15 +23,17 @@ import org.springframework.web.bind.annotation.*;
 public class TestSetController {
     @Autowired
     private TestSetService testSetService;
+
     @ApiOperation("查找科目")
     @GetMapping("/getCourse/{course}")
-    private Result getCourse(@PathVariable("course") String course){
+    private Result getCourse(@PathVariable("course") String course) {
         TestSet byId = testSetService.getById(course);
         return Result.success(byId);
     }
+
     @ApiOperation("保存考试设计")
     @PostMapping("/save")
-    private Result save(@RequestBody TestSet testSet){
+    private Result save(@RequestBody TestSet testSet) {
         testSetService.save(testSet);
         return Result.success();
     }
