@@ -21,11 +21,11 @@ import java.util.Date;
 @Mapper
 public interface RecordMapper extends BaseMapper<Record> {
     //todo 插入
-    @Insert("insert into record(u_id,pa_id,start_time,status) values (#{uId},#{paId},#{startTime},#{status}")
-    int saveRecord(@Param("uId") String uId, @Param("paId") String paId,
+    @Insert("insert into record(r_id,u_id,pa_id,start_time,status) values (#{rId},#{uId},#{paId},#{startTime},#{status})")
+    int saveRecord(@Param("rId") String rId,@Param("uId") String uId, @Param("paId") String paId,
                    @Param("startTime") Long startTime, @Param("status") String status);
     //todo 更新
-    @Update("update record score=#{score},completionTime=#{completionTime},status =#{status} where rId=#{rId} ")
+    @Update("update record score=#{score},completion_time=#{completionTime},status =#{status} where rId=#{rId} ")
     int updateRecord(@Param("score") String score, @Param("completionTime") Long completionTime,
                      @Param("status") String status, @Param("rId") String rId);
 

@@ -14,7 +14,7 @@ import ddbes.exam.demo.entity.TestPaper;
  * @Version: 1.0
  * Copyright: Copyright (c) 2021
  */
-public interface TestPaperService  {
+public interface TestPaperService extends IService<TestPaper>  {
     TestPaper getTestPaperByPaId(String paId);
     boolean saveTestPaper(TestPaper testPaper);
 

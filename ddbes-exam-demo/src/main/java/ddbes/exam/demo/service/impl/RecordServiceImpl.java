@@ -27,8 +27,8 @@ public class RecordServiceImpl extends ServiceImpl<RecordMapper, Record> impleme
 
 
     @Override
-    public int saveRecord(String uId, String paId, Long startTime,String status) {
-        return recordMapper.saveRecord(uId,paId,startTime,status);
+    public int saveRecord(String rId,String uId, String paId, Long startTime,String status) {
+        return recordMapper.saveRecord(rId,uId,paId,startTime,status);
     }
 
     @Override

@@ -37,7 +37,7 @@ public class Record implements Serializable {
     private Long startTime;
     @ApiModelProperty("完成时间")
     private Long completionTime;
-    @ApiModelProperty("状态")
+    @ApiModelProperty("状态: 0为提交 1正常提交 2超时提交 ")
     private String status;
 
 }

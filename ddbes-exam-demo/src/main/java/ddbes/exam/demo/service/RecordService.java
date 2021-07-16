@@ -16,7 +16,7 @@ import java.util.Date;
  * Copyright: Copyright (c) 2021
  */
 public interface RecordService extends IService<Record> {
-    int saveRecord(String uId,String paId, Long startTime,String status);
+    int saveRecord(String rId,String uId,String paId, Long startTime,String status);
     int updateRecord(String score,  Long completionTime,String status,String rId);
     Record getRecord(String paId);
 }

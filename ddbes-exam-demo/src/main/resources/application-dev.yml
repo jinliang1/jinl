@@ -4,6 +4,12 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: ddbes
     password: ddbes2020
+  data:
+    mongodb:
+      database: report
+      authentication-database: admin
+      uri: mongodb://ddbes:ddbes2020@middleware.inddbes.com:27017
+
 logging:
   level:
     com.ddbes.exam: debug

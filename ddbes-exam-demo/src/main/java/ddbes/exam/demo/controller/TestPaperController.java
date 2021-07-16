@@ -35,39 +35,46 @@ public class TestPaperController {
     private QuestionService questionService;
 
     @ApiOperation("单个试卷提交")
-    @GetMapping("/getTestPaper/{paId}")
-    public Result getTestPaper(@PathVariable("paId") String paId) {
+    @GetMapping("/getTestPaper")
+    public Result getTestPaper(@RequestBody Question question) {
+        HashMap<String, String> map = new HashMap<>();
         Integer count;
         Integer sum;
-        TestPaper testPaperByPaId = testPaperService.getTestPaperByPaId(paId);
-        List<Question> questionByPaId = questionService.getQuestionByPaId(paId);
-        List<Question> questions = questionService.listQuestons(paId);
+        boolean b = questionService.saveQuestion(question);
+        TestPaper testPaperByPaId = testPaperService.getTestPaperByPaId(question.getPaId());
+        List<Question> questionByPaId = questionService.getQuestionByPaId(question.getPaId());
+        List<Question> questions = questionService.listQuestons(question.getPaId());
         for (int i = 0; i < questionByPaId.size(); i++) {
+            if (!questionByPaId.get(i).getQType().equals(4)) {
+                map.put(questionByPaId.get(i).getQId(), questionByPaId.get(i).getQValue());
+            }
+        }
+
+        for (String s : map.keySet()) {
+            System.out.println("key  :" + s + "value  :" + map.get(s));
             for (int j = 0; j < questions.size(); j++) {
-                if (questionByPaId.get(i).getQId().equals(questions.get(j).getQId())) {
-                    if (!questionByPaId.get(i).getQType().equals(4)) {
-                        //todo 判断是否包含答案
-                        if (questions.get(j).getQOption().indexOf(questionByPaId.get(i).getQValue()) != -1) {
-                            int indexOf = questions.get(j).getQOption().indexOf(questionByPaId.get(i).getQValue());
-                            String substring = questions.get(j).getQOption().substring(indexOf, 2);
-                            count = Integer.parseInt(substring);
-                            sum = count++;
-                            testPaperByPaId.setCourse(sum.toString());
-                        }
+                if (map.get(s).equals(questions.get(j).getQId())) {
+                    //todo 判断是否包含答案
+                    if (questions.get(j).getQOption().indexOf(map.get(s)) != -1) {
+                        int indexOf = questions.get(j).getQOption().indexOf(map.get(s));
+                        String substring = questions.get(j).getQOption().substring(indexOf, 2);
+                        count = Integer.parseInt(substring);
+                        sum = count++;
+                        testPaperByPaId.setScore(sum.toString());
                     }
                 }
             }
         }
-        return Result.success();
+        return Result.success(testPaperByPaId);
     }
 
-    @ApiOperation("添加试卷")
+    @ApiOperation("创建试卷")
     @PostMapping("/save")
     public Result save(@RequestBody TestPaper testPaper) {
         testPaperService.saveTestPaper(testPaper);
         List<Question> questionByPaId = questionService
                 .getQuestionByPaId(testPaper.getPaId());
-        return Result.success();
+        return Result.success(questionByPaId);
     }
 
 }

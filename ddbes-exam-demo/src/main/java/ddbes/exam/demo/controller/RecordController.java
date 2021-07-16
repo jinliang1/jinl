@@ -40,7 +40,7 @@ public class RecordController {
     public Result save(@RequestBody Record record) {
         //todo 添加记录
         long startTime = System.currentTimeMillis();
-        recordService.saveRecord(record.getUId(), record.getPaId(), startTime, "0");
+        recordService.saveRecord(record.getRId(),record.getUId(), record.getPaId(), startTime, "0");
         Record getOne = recordService.getRecord(record.getPaId());
         return Result.success(getOne);
     }
@@ -55,9 +55,9 @@ public class RecordController {
         Record getOne = recordService.getRecord(record.getPaId());
         sum = getOne.getStartTime() + testPaperByPaId.getTime();
         if (sum > comTime) {
-            recordService.updateRecord(record.getScore(), comTime, "2", record.getRId());
+            recordService.updateRecord(testPaperByPaId.getScore(), comTime, "2", record.getRId());
         } else {
-            recordService.updateRecord(record.getScore(), comTime, "1", record.getRId());
+            recordService.updateRecord(testPaperByPaId.getScore(), comTime, "1", record.getRId());
         }
         return Result.success();
     }
