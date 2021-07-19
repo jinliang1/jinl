@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70e4bade-3326-4fd3-82e4-b83edc2055a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/entity/Grade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/service/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/ExamDemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/ExamDemoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/Exception/DefaultExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/exception/DefaultExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/RecordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/RecordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/TestPaperController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/TestPaperController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/UserFlagController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/UserFlagController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Record.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Record.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/TestPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/TestPaper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/Topic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/UserFlag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/UserFlag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/entity/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/mapper/RecordMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/mapper/RecordMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/RecordService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/RecordService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/TestPaperService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/TestPaperService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/TestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/TestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/UserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/QuestionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/RecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/RecordServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/TestPaperServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/TestPaperServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/TestServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/TestServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/utils/FileTranUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/util/FileTranUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/utils/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/util/Time.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/ExamDemoApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/ExamDemoApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/Exception/DefaultExceptionAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/Exception/DefaultExceptionAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/RecordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/RecordController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/RoutineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/RoutineController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TestPaperController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TestPaperController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TestSetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TestSetController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TopicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/TopicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/UserFlagController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/UserFlagController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/UserInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/controller/UserInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Record.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Record.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/TestPaper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/TestPaper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/Topic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/UserFlag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/UserFlag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/entity/UserInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/mapper/RecordMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/mapper/RecordMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/mapper/UserInfoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/mapper/UserInfoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/RecordService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/RecordService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/TestPaperService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/TestPaperService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/RecordServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/RecordServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/TestPaperServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/TestPaperServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/TestServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/TestServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/UserInfoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/utils/FileTranUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/utils/Time.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/UserInfoController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/TopicController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/TestController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/UserFlagController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/TestPaperController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/RecordServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/RoutineController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/RecordController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/QuestionController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/service/impl/UserFlagServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/ddbes/exam/demo/controller/TestSetController.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../maven/apache-maven-3.6.1" />
+        <option name="userSettingsFile" value="D:\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1uy1nO5JJyGe3HX6CzOjKbFDnWQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../学习Demo/程冠希" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workerspace\ddbes\ddbes-exam-demo\src\main\java\ddbes\exam\demo\Exception" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ExamDemoApp">
+    <configuration name="Time" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ddbes.exam.demo.util.Time" />
+      <module name="ddbes-exam-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ddbes.exam.demo.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExamDemoApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ddbes-exam-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ddbes.exam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ddbes.exam.ExamDemoApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ExamDemoApp" />
+        <item itemvalue="Application.Time" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70e4bade-3326-4fd3-82e4-b83edc2055a6" name="Default Changelist" comment="" />
+      <created>1625623180877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625623180877</updated>
+      <workItem from="1625623184713" duration="18844000" />
+      <workItem from="1625703736410" duration="23346000" />
+      <workItem from="1625790187793" duration="11150000" />
+      <workItem from="1625811271088" duration="3011000" />
+      <workItem from="1626050657611" duration="4990000" />
+      <workItem from="1626066478864" duration="8017000" />
+      <workItem from="1626136351876" duration="14443000" />
+      <workItem from="1626183014807" duration="1814000" />
+      <workItem from="1626221912126" duration="1216000" />
+      <workItem from="1626223190918" duration="41000" />
+      <workItem from="1626223585897" duration="21804000" />
+      <workItem from="1626258249003" duration="2251000" />
+      <workItem from="1626268512947" duration="2573000" />
+      <workItem from="1626271761217" duration="5506000" />
+      <workItem from="1626308796916" duration="16200000" />
+      <workItem from="1626336108951" duration="2677000" />
+      <workItem from="1626395149679" duration="3461000" />
+      <workItem from="1626398969451" duration="22000" />
+      <workItem from="1626399034365" duration="13404000" />
+      <workItem from="1626428075352" duration="51000" />
+      <workItem from="1626428156669" duration="95000" />
+      <workItem from="1626611432526" duration="1880000" />
+      <workItem from="1626654903061" duration="19740000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2360" y="94" key="#Project_Structure" timestamp="1625814130891">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2360" y="94" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1625814130891" />
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1626675128859">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2685" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626675128859" />
+    <state x="612" y="178" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1626277277065" />
+    <state x="2656" y="210" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1626657914253">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2656" y="210" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626657914253" />
+    <state x="2656" y="387" width="447" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1626146211535">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2656" y="387" width="447" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626146211535" />
+    <state x="342" y="0" key="CommitChangelistDialog2" timestamp="1626428175361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="342" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1626428175361" />
+    <state x="2660" y="274" key="FileChooserDialogImpl" timestamp="1626679054630">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2660" y="274" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626679054630" />
+    <state width="1877" height="167" key="GridCell.Tab.0.bottom" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1626427960260" />
+    <state width="1877" height="167" key="GridCell.Tab.0.center" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1626427960260" />
+    <state width="1877" height="167" key="GridCell.Tab.0.left" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1626427960260" />
+    <state width="1877" height="167" key="GridCell.Tab.0.right" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1626427960260" />
+    <state width="1877" height="167" key="GridCell.Tab.1.bottom" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1626427960261" />
+    <state width="1877" height="167" key="GridCell.Tab.1.center" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1626427960261" />
+    <state width="1877" height="167" key="GridCell.Tab.1.left" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1626427960261" />
+    <state width="1877" height="167" key="GridCell.Tab.1.right" timestamp="1626676959802">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="167" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626676959802" />
+    <state width="1877" height="520" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1626427960261" />
+    <state x="2410" y="175" key="Maven.ArtifactSearchDialog" timestamp="1626672312676">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2410" y="175" key="Maven.ArtifactSearchDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626672312676" />
+    <state x="103" y="114" key="SettingsEditor" timestamp="1626428126915">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2049" y="164" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626399162580" />
+    <state x="103" y="114" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1626428126915" />
+    <state x="2601" y="261" width="540" height="524" key="StructurePopup" timestamp="1626657460557">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2601" y="261" width="540" height="524" key="StructurePopup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626657460557" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1626657435166">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626657435166" />
+    <state x="2663" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1626657420131">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2663" y="415" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626657420131" />
+    <state x="2143" y="92" key="new project wizard" timestamp="1626681881222">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2143" y="92" key="new project wizard/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626681881222" />
+    <state x="178" y="73" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1626425366505" />
+    <state x="2521" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1626657441909">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2521" y="246" width="700" height="530" key="recent.locations.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626657441909" />
+    <state x="493" y="190" key="run.anything.popup" timestamp="1626428230901">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626248278997" />
+    <state x="493" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1626428230901" />
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626677577061">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1626677577061" />
+  </component>
+</project>

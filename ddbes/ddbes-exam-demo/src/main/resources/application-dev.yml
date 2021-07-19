@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://middleware.inddbes.com:3306/ddbes_exam_demo?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true&serverTimezone=UTC&allowMultiQueries=true&autoReconnect=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: ddbes
+    password: ddbes2020
+  data:
+    mongodb:
+      database: report
+      authentication-database: admin
+      uri: mongodb://ddbes:ddbes2020@middleware.inddbes.com:27017S
+
+logging:
+  level:
+    com.ddbes.exam: debug
