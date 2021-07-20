@@ -6,9 +6,9 @@ spring:
     password: ddbes2020
   data:
     mongodb:
-      database: report
+      database: ddbes_exam_demo
       authentication-database: admin
-      uri: mongodb://ddbes:ddbes2020@middleware.inddbes.com:27017S
+      uri: mongodb://ddbes:ddbes2020@middleware.inddbes.com:27017
 logging:
   level:
     com.ddbes.exam: debug

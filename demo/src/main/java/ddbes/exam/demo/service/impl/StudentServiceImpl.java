@@ -48,10 +48,10 @@ public class StudentServiceImpl implements StudentService {
     public void updateStudent(Student student) {
         Query query = new Query(Criteria.where("_id").is(student.getId()));
         Update update = new Update();
-        update.set("name" , student.getName());
-        update.set("sex" , student.getSex());
-        update.set("gradeId" ,student.getGradeId());
-        mongoTemplate.updateFirst(query,update,Student.class);
+        update.set("name", student.getName());
+        update.set("sex", student.getSex());
+        update.set("gradeId", student.getGradeId());
+        mongoTemplate.updateFirst(query, update, Student.class);
     }
 
     // todo 根据编号查询
@@ -71,23 +71,22 @@ public class StudentServiceImpl implements StudentService {
     // todo 两表查询
     @Override
     public Object getStudentAndGrade() {
-      LookupOperation lookupOperation=LookupOperation.newLookup()
-              .from("grade") //关联从表名
-              .localField("gradeId") //主表关联字段
-              .foreignField("_id") //从表关联字段
-              .as("GradeAndStu");   //查询结构
-  /*      //带条件查询可以选择添加下面的条件
-       Criteria criteria=Criteria.where("studenAndgrade").not().size(0);//只查询有结果的学生
+        LookupOperation lookupOperation = LookupOperation.newLookup()
+                .from("student") //关联从表名
+                .localField("_id") //主表关联字段
+                .foreignField("gradeId") //从表关联字段
+                .as("GradeAndStu");   //查询结构  查询结果名
+        //带条件查询可以选择添加下面的条件
+   /*    Criteria criteria=Criteria.where("studenAndgrade").not().size(0);//只查询有结果的学生
         Criteria qqq=Criteria.where("name").regex("文");//只查询名字中带有文
        AggregationOperation match1= Aggregation.match(qqq);
         AggregationOperation match = Aggregation.match(criteria);
-        Aggregation counts = Aggregation.newAggregation(match1,lookupOperation,match).;*/
+        Aggregation counts = Aggregation.newAggregation(match1,lookupOperation,match);*/
         Aggregation aggregation = Aggregation.newAggregation(lookupOperation);
         List<Map> results = mongoTemplate
-                .aggregate(aggregation, "student", Map.class).getMappedResults();
-                //上面的student必须是查询主标名
-        System.out.println(JSON.toJSONString(results));
-
+                .aggregate(aggregation, "grade", Map.class).getMappedResults();
+        //上面的student必须是查询主表名
+        //System.out.println(JSON.toJSONString(results));
         return results;
     }
 }

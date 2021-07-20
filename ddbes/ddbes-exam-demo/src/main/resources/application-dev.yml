@@ -8,7 +8,7 @@ spring:
     mongodb:
       database: report
       authentication-database: admin
-      uri: mongodb://ddbes:ddbes2020@middleware.inddbes.com:27017S
+      uri: mongodb://ddbes:ddbes2020@middleware.inddbes.com:27017
 
 logging:
   level:

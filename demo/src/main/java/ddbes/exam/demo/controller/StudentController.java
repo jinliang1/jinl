@@ -47,21 +47,21 @@ public class StudentController {
     public Result removeStudent(@PathVariable("id") String id) {
         try {
             studentService.removeStudent(id);
-            return new Result("200", "没有次id");
+            return new Result("200", "");
         } catch (Exception e) {
             e.printStackTrace();
-            return new Result("500", "ok");
+            return new Result("500", "");
         }
     }
     @ApiOperation("修改")
-    @PutMapping("students")
+    @PutMapping("/students")
     public  Result updateStudent(@RequestBody Student student){
         studentService.updateStudent(student);
         return Result.success(student);
     }
 
     @ApiOperation("增加")
-    @PutMapping("student")
+    @PostMapping("/students")
     public  Result saveStudent(@RequestBody Student student){
         studentService.saveStudent(student);
         return Result.success(student);
