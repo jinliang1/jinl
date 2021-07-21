@@ -186,6 +186,26 @@ public class TestSecond {
          map1.entrySet().stream()
                 .map(e -> new School(e.getValue(), e.getKey())).forEach(System.out :: println);
 
+         // todo 根据key排序
+        map1.entrySet().stream().sorted(Comparator.comparing( e -> e.getKey()))
+                .map(e -> new Grade(e.getKey() ,e.getValue())).forEach(System.out :: println);
+
+        // todo 根据value 排序
+        map1.entrySet().stream().sorted(Comparator.comparing(Map.Entry :: getValue))
+                .map(e -> new Grade(e.getKey() ,e.getValue()))
+                .forEach(System.out :: println);
+
+        // todo  根据key 排序
+        map1.entrySet().stream().sorted(Map.Entry.comparingByKey())
+                .map(e -> new Grade(e.getKey(), e.getValue()))
+                .forEach(System.out :: println);
+
+        // todo 从list中取出某个属性
+        list.stream().map(Student::getName).forEach(System.out :: println);
+        // todo 拿出所有gradeId 去从
+        list.stream().map(Student::getGradeId).collect(Collectors.toList())
+                .stream().distinct().forEach(System.out::println);
+
 
     }
 
