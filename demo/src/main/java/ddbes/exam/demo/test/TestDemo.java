@@ -1,9 +1,6 @@
 package ddbes.exam.demo.test;
 
 import ddbes.exam.demo.entity.Grade;
-import ddbes.exam.demo.entity.School;
-import springfox.documentation.service.ApiListing;
-
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -33,7 +30,7 @@ public class TestDemo {
         map.put("4", grade4);
         map.put("5", grade5);
         map.put("6", grade6);
-        // todo 根据键取值
+        // todo 先找键  根据键找值
         for (String s : map.keySet()) {
             System.out.println("key:" + s + "value: " + map.get(s));
         }
@@ -45,7 +42,7 @@ public class TestDemo {
         for (Map.Entry<String, Grade> entry : map.entrySet()) {
             System.out.println("键key： " + entry.getKey() + "值value： " + entry.getValue());
         }
-        // todo 通过迭代器 iterator 获得entry
+        // todo 先通过map.entrySet 获取iterator 通过迭代器 iterator 获得key value
         Iterator<Map.Entry<String, Grade>> iterator = map.entrySet().iterator();
         while (iterator.hasNext()) {
             Map.Entry<String, Grade> gradeEntry = iterator.next();

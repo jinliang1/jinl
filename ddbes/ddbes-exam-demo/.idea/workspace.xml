@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70e4bade-3326-4fd3-82e4-b83edc2055a6" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/demo/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/entity/Topic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../WTS" beforeDir="false" afterPath="$PROJECT_DIR$/../../WTS" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ddbes/exam/ExamDemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ddbes/exam/ExamDemoApp.java" afterDir="false" />
@@ -64,7 +65,8 @@
       <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/UserInfoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/service/impl/UserInfoServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/utils/FileTranUtil.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ddbes/exam/demo/utils/Time.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ddbes-template/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ddbes-template/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/entity/TestPaper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../demo/src/main/java/ddbes/exam/demo/entity/TestPaper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../spring-boot-online-exam" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-boot-online-exam" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -203,6 +205,7 @@
       <workItem from="1626428156669" duration="95000" />
       <workItem from="1626611432526" duration="1880000" />
       <workItem from="1626654903061" duration="20437000" />
+      <workItem from="1626764865398" duration="2739000" />
     </task>
     <servers />
   </component>

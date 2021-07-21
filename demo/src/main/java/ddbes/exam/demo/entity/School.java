@@ -1,6 +1,8 @@
 package ddbes.exam.demo.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +16,8 @@ import org.springframework.stereotype.Component;
  * Copyright: Copyright (c) 2021
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Document(collection = "School")
 public class School {
     private String id;
